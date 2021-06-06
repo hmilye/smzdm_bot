@@ -10,7 +10,7 @@ on:
   pull_request:
     branches: [ main ]
   schedule:
-    - cron: '0 23 * * *'
+    - cron: '12 0 * * *'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -36,6 +36,6 @@ jobs:
 
       - name: Working
         env:
-          COOKIES: ${{ secrets.SMZDM_COOKIE }}
+          COOKIES: ${{ __ckguid=y4q2wcQCHy6FnAFQqNWUeF4; r_sort_type=score; __jsluid_s=0837301f88eb322f3242d6d3e1c24e7b; _zdmA.vid=*; footer_floating_layer=0; ad_date=6; ad_json_feed={}; device_id=1034601522162294420356446921709d9330a47917977a01a4f8e6171b; sess=N2I0M2V8MTYyODEyODIwM3wxMTU3MTk3NjkxfDkwMjQyOTYwYWU4MWFjOGE3MTM5OWRkMWQyMWQ1ZjllfDEwMzQ2MDE1MjIxNjIyOTQ0MjAzNTY0NDY5MjE3MDlkOTMzMGE0NzkxNzk3N2EwMWE0ZjhlNjE3MWJ8d2Vi; user=user:1157197691|1157197691; smzdm_id=1157197691; homepage_sug=a; smzdm_user_view=D676F709F45A5C1AF7B188C6CDE8F739; smzdm_user_source=178234FB802863FFA6065BB68215EA60; _zdmA.uid=ZDMA.ntulmSE9g.1622944481.2419200; bannerCounter=[{"number":0,"surplus":1},{"number":0,"surplus":1},{"number":2,"surplus":1},{"number":0,"surplus":1},{"number":2,"surplus":1},{"number":2,"surplus":1}]; _zdmA.time=1622944481943.0.https://www.smzdm.com/ }}
           SERVERCHAN_SECRETKEY: ${{ secrets.SERVERCHAN_SECRETKEY }}
         run: python main.py #>SMZDM_Bot.log
